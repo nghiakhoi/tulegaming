@@ -1,0 +1,4 @@
+2020-09-24T15:44:31+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\MAMP\htdocs\tulegaming\wp-includes\class-wp-admin-bar.php on line 15
+
+2020-09-24T15:44:32+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\MAMP\htdocs\tulegaming\wp-content\plugins\woocommerce\includes\gateways\bacs\class-wc-gateway-bacs.php on line 8
+
