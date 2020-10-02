@@ -216,8 +216,13 @@ class VI_WPRODUCTBUILDER_F_FrontEnd_Step {
 		?>
 		
    
-     <link rel="stylesheet" href="https://hanoicomputercdn.com/template/may2020/script/style_build_pc_v2.css?v=1123567689">
-
+     <link rel="stylesheet" href="style_build_pc_v2.css">
+	
+<script>
+jQuery( document ).ready(function() {
+    alert( "ready!" );
+});
+</script>
 <div class="build-pc">
 	<div class="build-pc_content">
           
@@ -461,6 +466,8 @@ class VI_WPRODUCTBUILDER_F_FrontEnd_Step {
 	 * Init Script
 	 */
 	public function init_scripts() {
+		wp_enqueue_style( 'woo-product-builder', VI_WPRODUCTBUILDER_F_CSS . 'style_build_pc_v2.css', array(), VI_WPRODUCTBUILDER_F_VERSION );
+
 		if ( $this->settings->get_button_icon() ) {
 			wp_enqueue_style( 'woocommerce-product-builder-icon', VI_WPRODUCTBUILDER_F_CSS . 'woo-product-builder-icon.css', array(), VI_WPRODUCTBUILDER_F_VERSION );
 		}
