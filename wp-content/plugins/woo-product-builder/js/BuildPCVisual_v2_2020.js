@@ -7,7 +7,7 @@ var BuildPCVisual = function (_objBuildPC) {
 
     var objBuildPC = _objBuildPC;
     var BUILD_PRODUCT_TYPE = objBuildPC.getBuildId();
-    var ACTION_URL = "https://www.hanoicomputer.vn/ajax/get_json.php";
+    var ACTION_URL = "https://nghiakhoi.ddns.net:8888/wp-admin/admin-ajax.php";
     var $layout_container = jQuery("#js-buildpc-layout");
     var $modal_container = jQuery("#js-modal-popup");
     var row_tpl = `<div class="item-drive">
@@ -182,13 +182,9 @@ var BuildPCVisual = function (_objBuildPC) {
             }
         }
 
-        jQuery.get( ACTION_URL, {
-            action     : "pcbuilder",
-            action_type : "get-product-category",
-            category_id : category_info.id,
-            pc_part_id : current_selected_parts.join(","),
-            storeId: (jQuery('#js-buildpc-select-store').length > 0) ? jQuery('#js-buildpc-select-store input[name=radio-khohang]:checked').val() : ''
-        } , function (data) {
+        jQuery.post( ACTION_URL, {
+            action     : "loadpost",
+            } , function (data) {
             $modal_container.html(data);
           	console.log(category_info);
             jQuery('#default-store').attr({'data-info':category_info.id , 'data-part-id' : current_selected_parts.join(",") });
