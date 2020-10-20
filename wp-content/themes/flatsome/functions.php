@@ -1269,3 +1269,49 @@ function loadpost_init() {
 die();//bắt buộc phải có khi kết thúc
 
 }
+
+
+add_action( 'wp_ajax_getdanhmuc', 'getdanhmuc_init' );
+add_action( 'wp_ajax_nopriv_getdanhmuc', 'getdanhmuc_init' );
+function getdanhmuc_init() {
+    $cat_id = isset($_POST['cat_id']) ? (int)$_POST['cat_id'] : 0;
+    echo '<ul>';
+
+    $args = array(
+        'post_type'             => 'product',
+        'post_status'           => 'publish',
+        'ignore_sticky_posts'   => 1,
+        'posts_per_page'        => '12',
+        'tax_query'             => array(
+            array(
+                'taxonomy'      => 'product_cat',
+                'field' => 'term_id', //This is optional, as it defaults to 'term_id'
+                'terms'         => $cat_id,
+                'operator'      => 'IN' // Possible values are 'IN', 'NOT IN', 'AND'.
+            ),
+            array(
+                'taxonomy'      => 'product_visibility',
+                'field'         => 'slug',
+                'terms'         => 'exclude-from-catalog', // Possibly 'exclude-from-search' too
+                'operator'      => 'NOT IN'
+            )
+        )
+    );
+       $getposts = new WP_query($args); 
+       //$getposts->query('post_status=publish&showposts=-1&terms='.$cat_id);
+       global $wp_query; $wp_query->in_the_loop = true;
+       while ($getposts->have_posts()) : $getposts->the_post();
+          echo '<li>';
+          echo '<a href="'.get_the_permalink().'">'.get_the_title().'</a>';
+          echo '</li>';
+       endwhile; wp_reset_postdata();
+    echo '</ul>';
+    die(); 
+
+    ?>
+
+
+    <?php
+    //die();//bắt buộc phải có khi kết thúc
+
+    }

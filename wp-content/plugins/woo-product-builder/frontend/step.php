@@ -387,7 +387,21 @@ jQuery( document ).ready(function() {
 <a href="#" class="click_popup">Thông báo</a>
 <i class="fas fa-shopping-cart"></i></span></li>
           </ul>
-
+          <ul class="list-btn-action" id="js-buildpc-action">
+<?php $args = array( 
+ 'hide_empty' => 0,
+ 'taxonomy' => 'product_cat',
+ 'post_type' => 'product',
+ 'orderby' => id,
+ ); 
+ $cates = get_categories( $args ); 
+ foreach ( $cates as $cate ) { ?>
+    <li class="list-cat" data-id="<?php echo $cate->term_id; ?>">
+        <?php echo $cate->name ?>
+    </li>
+<?php } ?>
+</ul>
+<div class="display-post-cat"></div>
 
 <div class="loadpost_result"></div>
 <a href="#" class="click_popup">Tải 5 bài mới nhất</a>
@@ -424,6 +438,29 @@ jQuery( document ).ready(function() {
                 return false;
             })
         })
+
+        $('.list-cat').click(function(){ // Khi click vào category bất kỳ
+   var cat_id = $(this).data('id'); // lấy id của category đó thông qua data-id
+   $.ajax({ // Hàm ajax
+      type : "post", //Phương thức truyền post hoặc get
+      dataType : "html", //Dạng dữ liệu trả về xml, json, script, or html
+      url : '<?php echo admin_url('admin-ajax.php');?>', // Nơi xử lý dữ liệu
+      data : {
+         action: "getdanhmuc", //Tên action, dữ liệu gởi lên cho server
+         cat_id: cat_id, //Gởi id chuyên mục cho server
+      },
+      beforeSend: function(){
+        // Có thể thực hiện công việc load hình ảnh quay quay trước khi đổ dữ liệu ra
+      },
+      success: function(response) {
+         $('.display-post-cat').html(response); // Đổ dữ liệu trả về vào thẻ <div class="display-post"></div>
+      },
+      error: function( jqXHR, textStatus, errorThrown ){
+         //Làm gì đó khi có lỗi xảy ra
+         console.log( 'The following error occured: ' + textStatus, errorThrown );
+      }
+   });
+   });
     })(jQuery)
 </script>
 
