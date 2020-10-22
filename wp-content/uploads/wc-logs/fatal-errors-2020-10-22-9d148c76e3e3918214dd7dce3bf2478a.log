@@ -1,0 +1,219 @@
+2020-10-22T16:15:19+00:00 CRITICAL Uncaught Error: Call to undefined function wp_query() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:26
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpost_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 26
+
+2020-10-22T16:16:09+00:00 CRITICAL Uncaught Error: Call to undefined function wp_query() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:1257
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpost_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 1257
+
+2020-10-22T16:17:17+00:00 CRITICAL Uncaught Error: Call to undefined function wp_query() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:29
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpost_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 29
+
+2020-10-22T16:18:47+00:00 CRITICAL Uncaught Error: Call to undefined function wp_query() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:29
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpost_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 29
+
+2020-10-22T16:19:22+00:00 CRITICAL Uncaught Error: Call to undefined function wp_query() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:29
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpost_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 29
+
+2020-10-22T16:22:49+00:00 CRITICAL Uncaught Error: Call to undefined function wp_query() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:29
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpost_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 29
+
+2020-10-22T16:24:02+00:00 CRITICAL Uncaught Error: Call to undefined function wp_query() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:29
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpost_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 29
+
+2020-10-22T16:24:38+00:00 CRITICAL Uncaught Error: Call to undefined function wp_query() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:29
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpost_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 29
+
+2020-10-22T16:25:10+00:00 CRITICAL Uncaught Error: Call to undefined function wp_query() in /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php:283
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(289): VI_WPRODUCTBUILDER_F_FrontEnd_Step->step_html(Array)
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/templates/content-product-builder-single.php(7): do_action('woocommerce_pro...', Array, 1)
+#4 /volume2/web/tulegaming/wp-content/plugins/woocommerce/includes/wc-core-functions.php(344): include('/volume2/web/tu...')
+#5 /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php(860): wc_get_template('content-product...', Array, '', '/volume2/web/tu...')
+#6 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): VI_WPRODUCTBUILDER_F_FrontEnd_Step->product_builder_content_single in /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php on line 283
+
+2020-10-22T16:25:50+00:00 CRITICAL Uncaught Error: Call to undefined function wp_query() in /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php:283
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(289): VI_WPRODUCTBUILDER_F_FrontEnd_Step->step_html(Array)
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/templates/content-product-builder-single.php(7): do_action('woocommerce_pro...', Array, 1)
+#4 /volume2/web/tulegaming/wp-content/plugins/woocommerce/includes/wc-core-functions.php(344): include('/volume2/web/tu...')
+#5 /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php(860): wc_get_template('content-product...', Array, '', '/volume2/web/tu...')
+#6 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): VI_WPRODUCTBUILDER_F_FrontEnd_Step->product_builder_content_single in /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php on line 283
+
+2020-10-22T16:26:26+00:00 CRITICAL Uncaught Error: Call to undefined function wp_query() in /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php:381
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(289): VI_WPRODUCTBUILDER_F_FrontEnd_Step->step_html(Array)
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/templates/content-product-builder-single.php(7): do_action('woocommerce_pro...', Array, 1)
+#4 /volume2/web/tulegaming/wp-content/plugins/woocommerce/includes/wc-core-functions.php(344): include('/volume2/web/tu...')
+#5 /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php(860): wc_get_template('content-product...', Array, '', '/volume2/web/tu...')
+#6 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): VI_WPRODUCTBUILDER_F_FrontEnd_Step->product_builder_content_single in /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php on line 381
+
+2020-10-22T16:38:14+00:00 CRITICAL Uncaught Error: Call to undefined function wp_query() in /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php:268
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(289): VI_WPRODUCTBUILDER_F_FrontEnd_Step->step_html(Array)
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/templates/content-product-builder-single.php(7): do_action('woocommerce_pro...', Array, 1)
+#4 /volume2/web/tulegaming/wp-content/plugins/woocommerce/includes/wc-core-functions.php(344): include('/volume2/web/tu...')
+#5 /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php(852): wc_get_template('content-product...', Array, '', '/volume2/web/tu...')
+#6 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): VI_WPRODUCTBUILDER_F_FrontEnd_Step->product_builder_content_single in /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php on line 268
+
+2020-10-22T16:47:56+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php:278
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(289): VI_WPRODUCTBUILDER_F_FrontEnd_Step->step_html(Array)
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/templates/content-product-builder-single.php(7): do_action('woocommerce_pro...', Array, 1)
+#4 /volume2/web/tulegaming/wp-content/plugins/woocommerce/includes/wc-core-functions.php(344): include('/volume2/web/tu...')
+#5 /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php(863): wc_get_template('content-product...', Array, '', '/volume2/web/tu...')
+#6 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): VI_WPRODUCTBUILDER_F_FrontEnd_Step->product_bui in /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php on line 278
+
+2020-10-22T16:52:19+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php:279
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(289): VI_WPRODUCTBUILDER_F_FrontEnd_Step->step_html(Array)
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/templates/content-product-builder-single.php(7): do_action('woocommerce_pro...', Array, 1)
+#4 /volume2/web/tulegaming/wp-content/plugins/woocommerce/includes/wc-core-functions.php(344): include('/volume2/web/tu...')
+#5 /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php(864): wc_get_template('content-product...', Array, '', '/volume2/web/tu...')
+#6 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): VI_WPRODUCTBUILDER_F_FrontEnd_Step->product_bui in /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php on line 279
+
+2020-10-22T16:53:11+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php:279
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(289): VI_WPRODUCTBUILDER_F_FrontEnd_Step->step_html(Array)
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/templates/content-product-builder-single.php(7): do_action('woocommerce_pro...', Array, 1)
+#4 /volume2/web/tulegaming/wp-content/plugins/woocommerce/includes/wc-core-functions.php(344): include('/volume2/web/tu...')
+#5 /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php(864): wc_get_template('content-product...', Array, '', '/volume2/web/tu...')
+#6 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): VI_WPRODUCTBUILDER_F_FrontEnd_Step->product_bui in /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php on line 279
+
+2020-10-22T16:53:17+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php:279
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(289): VI_WPRODUCTBUILDER_F_FrontEnd_Step->step_html(Array)
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/templates/content-product-builder-single.php(7): do_action('woocommerce_pro...', Array, 1)
+#4 /volume2/web/tulegaming/wp-content/plugins/woocommerce/includes/wc-core-functions.php(344): include('/volume2/web/tu...')
+#5 /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php(864): wc_get_template('content-product...', Array, '', '/volume2/web/tu...')
+#6 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): VI_WPRODUCTBUILDER_F_FrontEnd_Step->product_bui in /volume2/web/tulegaming/wp-content/plugins/woo-product-builder/frontend/step.php on line 279
+
+2020-10-22T17:14:32+00:00 CRITICAL Uncaught Error: Call to undefined function get_price() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:469
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpost_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 469
+
+2020-10-22T17:14:39+00:00 CRITICAL Uncaught Error: Call to undefined function get_price() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:469
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpost_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 469
+
+2020-10-22T17:14:48+00:00 CRITICAL Uncaught Error: Call to undefined function get_prices() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:469
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpost_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 469
+
+2020-10-22T17:17:43+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:469
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpost_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 469
+
+2020-10-22T17:17:47+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:469
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpost_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 469
+
+2020-10-22T17:17:57+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:469
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpost_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 469
+
+2020-10-22T17:19:02+00:00 CRITICAL Uncaught Error: Call to undefined function get_id() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:469
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpost_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 469
+
+2020-10-22T17:24:15+00:00 CRITICAL syntax error, unexpected '$product' (T_VARIABLE) in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 469
+
+2020-10-22T17:24:15+00:00 CRITICAL syntax error, unexpected '$product' (T_VARIABLE) in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 469
+

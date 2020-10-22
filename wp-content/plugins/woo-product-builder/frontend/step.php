@@ -216,13 +216,7 @@ class VI_WPRODUCTBUILDER_F_FrontEnd_Step {
 		
 		?>
 		
-   
-     
-<script>
-jQuery( document ).ready(function() {
-    alert( "ready!" );
-});
-</script>
+
 <div class="build-pc">
 	<div class="build-pc_content">
           
@@ -244,133 +238,9 @@ jQuery( document ).ready(function() {
           <p style="float:right; font-size:20px; margin-top:10px;">Chi phí dự tính: <span class="js-config-summary" style="color: #d00; font-weight: bold"><span class="total-price-config">0</span> đ <p> </p></span> </p><div class="clear"></div>
 			<div class="js-buildpc-promotion-content"></div>
           <div class="clear"></div>
-          <div class="list-drive" id="js-buildpc-layout"><div class="item-drive">
-                            <span class="d-name">1. Bộ vi xử lý</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-31" data-info="{&quot;id&quot;:31,&quot;name&quot;:&quot;Bộ vi xử lý&quot;}"><i class="fa fa-plus"></i> Chọn Bộ vi xử lý</span>
-                                <div id="js-selected-item-31"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">2. Bo mạch chủ</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-30" data-info="{&quot;id&quot;:30,&quot;name&quot;:&quot;Bo mạch chủ&quot;}"><i class="fa fa-plus"></i> Chọn Bo mạch chủ</span>
-                                <div id="js-selected-item-30"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">3. RAM</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-32" data-info="{&quot;id&quot;:32,&quot;name&quot;:&quot;RAM&quot;}"><i class="fa fa-plus"></i> Chọn RAM</span>
-                                <div id="js-selected-item-32"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">4. HDD</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-33" data-info="{&quot;id&quot;:33,&quot;name&quot;:&quot;HDD&quot;}"><i class="fa fa-plus"></i> Chọn HDD</span>
-                                <div id="js-selected-item-33"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">5. SSD</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-164" data-info="{&quot;id&quot;:164,&quot;name&quot;:&quot;SSD&quot;}"><i class="fa fa-plus"></i> Chọn SSD</span>
-                                <div id="js-selected-item-164"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">6. VGA</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-34" data-info="{&quot;id&quot;:34,&quot;name&quot;:&quot;VGA&quot;}"><i class="fa fa-plus"></i> Chọn VGA</span>
-                                <div id="js-selected-item-34"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">7. Nguồn</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-36" data-info="{&quot;id&quot;:36,&quot;name&quot;:&quot;Nguồn&quot;}"><i class="fa fa-plus"></i> Chọn Nguồn</span>
-                                <div id="js-selected-item-36"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">8. Vỏ Case</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-35" data-info="{&quot;id&quot;:35,&quot;name&quot;:&quot;Vỏ Case&quot;}"><i class="fa fa-plus"></i> Chọn Vỏ Case</span>
-                                <div id="js-selected-item-35"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">9. Màn hình</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-39" data-info="{&quot;id&quot;:39,&quot;name&quot;:&quot;Màn hình&quot;}"><i class="fa fa-plus"></i> Chọn Màn hình</span>
-                                <div id="js-selected-item-39"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">10. Bộ bàn phím, chuột</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-169" data-info="{&quot;id&quot;:169,&quot;name&quot;:&quot;Bộ bàn phím, chuột&quot;}"><i class="fa fa-plus"></i> Chọn Bộ bàn phím, chuột</span>
-                                <div id="js-selected-item-169"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">11. Bàn phím</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-37" data-info="{&quot;id&quot;:37,&quot;name&quot;:&quot;Bàn phím&quot;}"><i class="fa fa-plus"></i> Chọn Bàn phím</span>
-                                <div id="js-selected-item-37"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">12. Chuột</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-38" data-info="{&quot;id&quot;:38,&quot;name&quot;:&quot;Chuột&quot;}"><i class="fa fa-plus"></i> Chọn Chuột</span>
-                                <div id="js-selected-item-38"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">13. Tai nghe</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-246" data-info="{&quot;id&quot;:246,&quot;name&quot;:&quot;Tai nghe&quot;}"><i class="fa fa-plus"></i> Chọn Tai nghe</span>
-                                <div id="js-selected-item-246"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">14. Loa</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-248" data-info="{&quot;id&quot;:248,&quot;name&quot;:&quot;Loa&quot;}"><i class="fa fa-plus"></i> Chọn Loa</span>
-                                <div id="js-selected-item-248"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">15. Ghế Gaming</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-316" data-info="{&quot;id&quot;:316,&quot;name&quot;:&quot;Ghế Gaming&quot;}"><i class="fa fa-plus"></i> Chọn Ghế Gaming</span>
-                                <div id="js-selected-item-316"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">16. Quạt Làm Mát</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-68" data-info="{&quot;id&quot;:68,&quot;name&quot;:&quot;Quạt Làm Mát&quot;}"><i class="fa fa-plus"></i> Chọn Quạt Làm Mát</span>
-                                <div id="js-selected-item-68"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">17. Tản nhiệt nước All in One</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-332" data-info="{&quot;id&quot;:332,&quot;name&quot;:&quot;Tản nhiệt nước All in One&quot;}"><i class="fa fa-plus"></i> Chọn Tản nhiệt nước All in One</span>
-                                <div id="js-selected-item-332"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">18. Tản nhiệt nước Custom</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-334" data-info="{&quot;id&quot;:334,&quot;name&quot;:&quot;Tản nhiệt nước Custom&quot;}"><i class="fa fa-plus"></i> Chọn Tản nhiệt nước Custom</span>
-                                <div id="js-selected-item-334"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">19. Tản Nhiệt khí</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-64" data-info="{&quot;id&quot;:64,&quot;name&quot;:&quot;Tản Nhiệt khí&quot;}"><i class="fa fa-plus"></i> Chọn Tản Nhiệt khí</span>
-                                <div id="js-selected-item-64"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">20. Windows bản quyền</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-53" data-info="{&quot;id&quot;:53,&quot;name&quot;:&quot;Windows bản quyền&quot;}"><i class="fa fa-plus"></i> Chọn Windows bản quyền</span>
-                                <div id="js-selected-item-53"></div>
-                            </div>
-                        </div><div class="item-drive">
-                            <span class="d-name">21. Phần mềm Antivirus</span>
-                            <div class="drive-checked">
-                                <span class="show-popup_select span-last open-selection" id="js-category-info-52" data-info="{&quot;id&quot;:52,&quot;name&quot;:&quot;Phần mềm Antivirus&quot;}"><i class="fa fa-plus"></i> Chọn Phần mềm Antivirus</span>
-                                <div id="js-selected-item-52"></div>
-                            </div>
-                        </div></div>
+          <div class="list-drive" id="js-buildpc-layout">
+          
+                        </div>
           <div class="clear"></div>
           <p style="float:right; font-size:20px; margin-top:10px;">Chi phí dự tính: <span class="js-config-summary" style="color: #d00; font-weight: bold"><span class="total-price-config">0</span> đ <p> </p></span></p><div class="clear"></div>
           <div class="js-buildpc-promotion-content"></div>
@@ -388,19 +258,30 @@ jQuery( document ).ready(function() {
 <i class="fas fa-shopping-cart"></i></span></li>
           </ul>
           <ul class="list-btn-action" id="js-buildpc-action">
-<?php $args = array( 
- 'hide_empty' => 0,
- 'taxonomy' => 'product_cat',
- 'post_type' => 'product',
- 'orderby' => id,
- ); 
- $cates = get_categories( $args ); 
- foreach ( $cates as $cate ) { ?>
-    <li class="list-cat" data-id="<?php echo $cate->term_id; ?>">
-        <?php echo $cate->name ?>
+<?php 
+$query = new WP_Query( array(
+    'post_type'      => 'product',
+    'post_status'    => 'publish',
+    'posts_per_page' => -1,
+    'tax_query'      => array( array(
+        'taxonomy'   => 'product_cat',
+        'field'      => 'term_id',
+        'terms'      => '142',
+    ) )
+) );
+
+while ( $query->have_posts() ) : $query->the_post();
+    echo '<li style="color:red" class="list-cat"><a href="'. get_permalink() .'"><div class="product__preview"><img src="' . get_the_post_thumbnail_url() . '"></div><span>' . get_the_title() . '</span></a></li>';
+endwhile;
+
+wp_reset_postdata();
+ 
+?>
+<li style="color:red" class="list-cat" >
+        <?php echo 'aa'; ?>
     </li>
-<?php } ?>
 </ul>
+
 <div class="display-post-cat"></div>
 
 <div class="loadpost_result"></div>
@@ -502,90 +383,23 @@ jQuery( document ).ready(function() {
 <script>
     //pc config
     var category_config = [
+
+        <?php $args = array( 
+ 'hide_empty' => 0,
+ 'taxonomy' => 'product_cat',
+ 'post_type' => 'product',
+ 'orderby' => id,
+ ); 
+ $cates = get_categories( $args ); 
+ foreach ( $cates as $cate ) { ?>
     {
-        "id": 31,
-        "name": "B\u1ed9 vi x\u1eed l\u00fd"
-    },
-    {
-        "id": 30,
-        "name": "Bo m\u1ea1ch ch\u1ee7"
-    },
-    {
-        "id": 32,
-        "name": "RAM"
-    },
-    {
-        "id": 33,
-        "name": "HDD"
-    },
-    {
-        "id": 164,
-        "name": "SSD"
-    },
-    {
-        "id": 34,
-        "name": "VGA"
-    },
-    {
-        "id": 36,
-        "name": "Ngu\u1ed3n"
-    },
-    {
-        "id": 35,
-        "name": "V\u1ecf Case"
-    },
-    {
-        "id": 39,
-        "name": "M\u00e0n h\u00ecnh"
-    },
-    {
-        "id": 169,
-        "name": "B\u1ed9 b\u00e0n ph\u00edm, chu\u1ed9t"
-    },
-    {
-        "id": 37,
-        "name": "B\u00e0n ph\u00edm"
-    },
-    {
-        "id": 38,
-        "name": "Chu\u1ed9t"
-    },
-    {
-        "id": 246,
-        "name": "Tai nghe"
-    },
-    {
-        "id": 248,
-        "name": "Loa"
-    },
-    {
-        "id": 316,
-        "name": "Gh\u1ebf Gaming"
-    },
-    {
-        "id": 68,
-        "name": "Qu\u1ea1t L\u00e0m M\u00e1t"
-    },
-    {
-        "id": 332,
-        "name": "T\u1ea3n nhi\u1ec7t n\u01b0\u1edbc All in One"
-    },
-    {
-        "id": 334,
-        "name": "T\u1ea3n nhi\u1ec7t n\u01b0\u1edbc Custom"
-    },
-    {
-        "id": 64,
-        "name": "T\u1ea3n Nhi\u1ec7t kh\u00ed"
-    },
-    {
-        "id": 53,
-        "name": "Windows b\u1ea3n quy\u1ec1n"
-    },
-    {
-        "id": 52,
-        "name": "Ph\u1ea7n m\u1ec1m Antivirus"
-    }
+        "id": <?php echo $cate->term_id; ?>,
+        "name": "<?php echo $cate->name ?>"
+    },    
+<?php } ?>
+
+    
+   
 ];
     var SEARCH_URL = "https://nghiakhoi.ddns.net:8888/wp-admin/admin-ajax.php";
   
