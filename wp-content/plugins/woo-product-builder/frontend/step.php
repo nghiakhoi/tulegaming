@@ -729,6 +729,7 @@ wp_reset_postdata();
 	 */
 	public function init_scripts() {
 		wp_enqueue_style( 'woo-product-builder', VI_WPRODUCTBUILDER_F_CSS . 'style_build_pc_v2.css', array(), VI_WPRODUCTBUILDER_F_VERSION );
+		wp_enqueue_style( 'woo-product-builder1', VI_WPRODUCTBUILDER_F_CSS . 'fontawesome.css', array(), VI_WPRODUCTBUILDER_F_VERSION );
 		// wp_enqueue_style( 'woo-product-builder1', VI_WPRODUCTBUILDER_F_CSS . 'otherstyle2020.css', array(), VI_WPRODUCTBUILDER_F_VERSION );
 
 		if ( $this->settings->get_button_icon() ) {

@@ -1,5 +1,8 @@
 @charset "UTF-8";
-
+@font-face {
+  font-family: 'Font Awesome 5 Pro';
+  src: url(./webfonts/fa-regular-400.woff);
+}
 
 .build-pc *,.custom-pc * {
   margin: 0;

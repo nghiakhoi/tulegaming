@@ -286,7 +286,7 @@ var BuildPCVisual = function (_objBuildPC) {
         objBuildPC.emptyCategory(category_info.id);
 
         jQuery.get(ACTION_URL, {
-            action     : "product",
+            action     : "example_ajax_request",
             action_type : "basic-info",
             id : product_id
         } , function (data) {

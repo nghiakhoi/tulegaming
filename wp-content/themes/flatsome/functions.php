@@ -474,8 +474,7 @@ function loadpost_init() {
                         
                     </div>
                     <?php
-                        echo '<li style="color:red" class="list-cat"><a href="'. get_permalink() .'"><div class="product__preview"><img src="' . get_the_post_thumbnail_url() . '"></div><span>' . get_the_title() . '</span></a></li>';
-                    endwhile;
+                        endwhile;
                     ?>
                     
                     
@@ -537,3 +536,200 @@ function getdanhmuc_init() {
     //die();//bắt buộc phải có khi kết thúc
 
     }
+
+add_action( 'wp_ajax_example_ajax_request', 'example_ajax_request' );
+add_action( 'wp_ajax_nopriv_example_ajax_request', 'example_ajax_request' );
+function example_ajax_request() {
+    if ( isset($_GET) ) {
+       if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) { 
+           $fruit = $_GET['id'];
+           //echo $fruit;
+           echo '{
+            "id": "55894",
+            "productId": "55894",
+            "isOn": "1",
+            "productPath": [
+                {
+                    "path": [
+                        {
+                            "id": "6",
+                            "url": "\/linh-kien-may-tinh",
+                            "name": "Linh Ki\u1ec7n M\u00e1y T\u00ednh"
+                        },
+                        {
+                            "id": "31",
+                            "url": "\/cpu-bo-vi-xu-ly",
+                            "name": "CPU - B\u1ed9 vi x\u1eed l\u00fd"
+                        },
+                        {
+                            "id": "617",
+                            "url": "\/cpu-intel",
+                            "name": "CPU Intel"
+                        },
+                        {
+                            "id": "836",
+                            "url": "\/cpu-intel-core-i3",
+                            "name": "CPU Intel Core i3"
+                        }
+                    ],
+                    "path_url": "<a href=\"\/linh-kien-may-tinh\">Linh Ki\u1ec7n M\u00e1y T\u00ednh<\/a>  &gt;&gt; <a href=\"\/cpu-bo-vi-xu-ly\">CPU - B\u1ed9 vi x\u1eed l\u00fd<\/a>  &gt;&gt; <a href=\"\/cpu-intel\">CPU Intel<\/a>  &gt;&gt; <a href=\"\/cpu-intel-core-i3\">CPU Intel Core i3<\/a> "
+                }
+            ],
+            "productModel": "CPUI407",
+            "productSKU": "CPUI407",
+            "productUrl": "\/cpu-intel-core-i3-10100f",
+            "productName": "CPU Intel Core i3-10100F (3.6GHz turbo up to 4.3Ghz, 4 nh\u00e2n 8 lu\u1ed3ng, 6MB Cache, 65W) - Socket Intel LGA 1200",
+            "productImage": {
+                "thum": "https:\/\/hanoicomputercdn.com\/media\/product\/50_55894_cpu_intel_core_i3_10100f.jpg",
+                "small": "https:\/\/hanoicomputercdn.com\/media\/product\/75_55894_cpu_intel_core_i3_10100f.jpg",
+                "medium": "https:\/\/hanoicomputercdn.com\/media\/product\/120_55894_cpu_intel_core_i3_10100f.jpg",
+                "large": "https:\/\/hanoicomputercdn.com\/media\/product\/250_55894_cpu_intel_core_i3_10100f.jpg",
+                "original": "https:\/\/hanoicomputercdn.com\/media\/product\/55894_cpu_intel_core_i3_10100f.jpg"
+            },
+            "price": "2399000",
+            "currency": "vnd",
+            "promotion_price": "0",
+            "priceUnit": "chi\u1ebfc",
+            "marketPrice": "0",
+            "brand": {
+                "id": "21",
+                "brand_index": "intel",
+                "name": "INTEL",
+                "summary": "",
+                "image": "https:\/\/hanoicomputercdn.com\/media\/brand\/intel.jpg",
+                "product": "0",
+                "status": "1",
+                "is_featured": "0",
+                "ordering": "0",
+                "letter": "I",
+                "lastUpdate": "2020-04-11 15:28:54",
+                "brand_page_view": "0",
+                "meta_title": "INTEL, Th\u00f4ng Tin V\u00e0 S\u1ea3n Ph\u1ea9m C\u1ee7a H\u00e3ng INTEL - HANOICOMPUTER",
+                "meta_keywords": "",
+                "meta_description": "INTEL | Linh ki\u1ec7n, Mainboard, CPU, M\u00e1y t\u00ednh v\u0103n ph\u00f2ng mini v.v. Gi\u00e1 r\u1ebb \u2713 Ch\u1ea5t l\u01b0\u1ee3ng \u2713 Ch\u00ednh h\u00e3ng \u2713 \u01afu \u0111\u00e3i h\u1ea5p d\u1eabn \u2713 Ch\u00ednh s\u00e1ch chu \u0111\u00e1o t\u1ea1i HANOICOMPUTER",
+                "sellerId": "0",
+                "description": ""
+            },
+            "productSummary": "D\u00f2ng Core i3 th\u1ebf h\u1ec7 th\u1ee9 10 d\u00e0nh cho m\u00e1y b\u00e0n c\u1ee7a Intel\r\n4 nh\u00e2n & 8 lu\u1ed3ng\r\nXung nh\u1ecbp: 3.6GHz (C\u01a1 b\u1ea3n) \/ 4.3GHz (Boost)\r\nSocket: LGA1200\r\n\u0110\u00e3 k\u00e8m s\u1eb5n t\u1ea3n nhi\u1ec7t t\u1eeb h\u00e3ng\r\nKh\u00f4ng k\u00e8m s\u1eb5n iGPU, c\u1ea7n s\u1eed d\u1ee5ng c\u00f9ng VGA r\u1eddi",
+            "package_accessory": "0",
+            "productImageGallery": [
+                {
+                    "folder": "standard",
+                    "size": {
+                        "thum": "https:\/\/hanoicomputercdn.com\/media\/product\/50_55894_cpu_intel_core_i3_10100f_11.jpg",
+                        "small": "https:\/\/hanoicomputercdn.com\/media\/product\/75_55894_cpu_intel_core_i3_10100f_11.jpg",
+                        "medium": "https:\/\/hanoicomputercdn.com\/media\/product\/120_55894_cpu_intel_core_i3_10100f_11.jpg",
+                        "large": "https:\/\/hanoicomputercdn.com\/media\/product\/250_55894_cpu_intel_core_i3_10100f_11.jpg",
+                        "original": "https:\/\/hanoicomputercdn.com\/media\/product\/55894_cpu_intel_core_i3_10100f_11.jpg"
+                    },
+                    "alt": "CPU Intel Core i3-10100F"
+                },
+                {
+                    "folder": "standard",
+                    "size": {
+                        "thum": "https:\/\/hanoicomputercdn.com\/media\/product\/50_55894_cpu_intel_core_i3_10100f_22.jpg",
+                        "small": "https:\/\/hanoicomputercdn.com\/media\/product\/75_55894_cpu_intel_core_i3_10100f_22.jpg",
+                        "medium": "https:\/\/hanoicomputercdn.com\/media\/product\/120_55894_cpu_intel_core_i3_10100f_22.jpg",
+                        "large": "https:\/\/hanoicomputercdn.com\/media\/product\/250_55894_cpu_intel_core_i3_10100f_22.jpg",
+                        "original": "https:\/\/hanoicomputercdn.com\/media\/product\/55894_cpu_intel_core_i3_10100f_22.jpg"
+                    },
+                    "alt": "CPU Intel Core i3-10100F"
+                },
+                {
+                    "folder": "standard",
+                    "size": {
+                        "thum": "https:\/\/hanoicomputercdn.com\/media\/product\/50_55894_cpu_intel_core_i3_10100f_33.jpg",
+                        "small": "https:\/\/hanoicomputercdn.com\/media\/product\/75_55894_cpu_intel_core_i3_10100f_33.jpg",
+                        "medium": "https:\/\/hanoicomputercdn.com\/media\/product\/120_55894_cpu_intel_core_i3_10100f_33.jpg",
+                        "large": "https:\/\/hanoicomputercdn.com\/media\/product\/250_55894_cpu_intel_core_i3_10100f_33.jpg",
+                        "original": "https:\/\/hanoicomputercdn.com\/media\/product\/55894_cpu_intel_core_i3_10100f_33.jpg"
+                    },
+                    "alt": "CPU Intel Core i3-10100F"
+                },
+                {
+                    "folder": "standard",
+                    "size": {
+                        "thum": "https:\/\/hanoicomputercdn.com\/media\/product\/50_55894_cpu_intel_core_i3_10100f.jpg",
+                        "small": "https:\/\/hanoicomputercdn.com\/media\/product\/75_55894_cpu_intel_core_i3_10100f.jpg",
+                        "medium": "https:\/\/hanoicomputercdn.com\/media\/product\/120_55894_cpu_intel_core_i3_10100f.jpg",
+                        "large": "https:\/\/hanoicomputercdn.com\/media\/product\/250_55894_cpu_intel_core_i3_10100f.jpg",
+                        "original": "https:\/\/hanoicomputercdn.com\/media\/product\/55894_cpu_intel_core_i3_10100f.jpg"
+                    },
+                    "alt": "CPU Intel Core i3-10100F"
+                }
+            ],
+            "productImageCount": "4",
+            "warranty": "36 Th\u00e1ng",
+            "specialOffer": {
+                "all": []
+            },
+            "specialOfferGroup": [],
+            "shipping": "0",
+            "quantity": "23",
+            "visit": "4046",
+            "status": "1",
+            "configCount": "0",
+            "configList": "",
+            "comboCount": "0",
+            "buy_count": "0",
+            "has_video": "0",
+            "manual_url": "",
+            "hasVAT": "1",
+            "productType": {
+                "isNew": 0,
+                "isHot": 0,
+                "isBestSale": 0,
+                "isSaleOff": 0,
+                "online-only": 0
+            },
+            "condition": "",
+            "config_count": "0",
+            "extend": {
+                "product_name_h1": "",
+                "more_price_1": "0",
+                "more_price_2": "0",
+                "more_price_3": "0"
+            },
+            "meta_title": "CPU Intel Core i3-10100F (3.6GHz turbo up to 4.3Ghz, 4 nh\u00e2n 8 lu\u1ed3ng, 6MB Cache, 65W) - Socket Intel LGA 1200",
+            "meta_keyword": "",
+            "meta_description": "Mua CPU Intel Core i3-10100F ch\u00ednh h\u00e3ng t\u1ea1i HANOICOMPUTER! Build PC gi\u00e1 t\u1ed1t, khuy\u1ebfn m\u00e3i h\u1ea5p d\u1eabn t\u1ea1i HANOICOMPUTER! D\u1ecbch v\u1ee5 uy t\u00edn. Ph\u1ee5c v\u1ee5 t\u1eadn t\u00e2m. Mua ngay!",
+            "last_update": "2020-10-14T08:14:06+0700",
+            "supplier": false,
+            "bulk_price": [],
+            "thum_poster": "0",
+            "thum_poster_type": "",
+            "sale_rules": {
+                "price": "2399000",
+                "normal_price": "2399000",
+                "min_purchase": 1,
+                "max_purchase": "23",
+                "remain_quantity": "23",
+                "from_time": 0,
+                "to_time": 0,
+                "type": ""
+            },
+            "deal_list": [],
+            "related": {
+                "product": [],
+                "article-article": []
+            },
+            "categoryInfo": [
+                {
+                    "id": "836",
+                    "name": "CPU Intel Core i3",
+                    "summary": "<p>C&aacute;c con chip Core I5, I7 hay th\u1eadm ch&iacute; l&agrave; Core I9 hi\u1ec7n nay \u0111\u01b0\u1ee3c coi l&agrave; c\u1ea5u h&igrave;nh ti&ecirc;u chu\u1ea9n cho c&aacute;c b\u1ed9 m&aacute;y t\u1ea7m trung tr\u1edf n&ecirc;n. Nh\u01b0ng v\u1edbi s\u1ef1 ph&aacute;t tri\u1ec3n c\u1ee7a m&igrave;nh, CPU Intel Core I3 th\u1ebf h\u1ec7 th\u1ee9 10 c\u0169ng c&oacute; s\u1ee9c m\u1ea1nh kh&ocirc;ng k&eacute;m g&igrave; nh\u1eefng con chip I7 \u0111\u1eddi c\u0169. B\u1edfi v\u1eady, ch\u1eb3ng c&oacute; l\u1ebd g&igrave; b\u1ea1n kh&ocirc;ng mua m\u1ed9t con chip I3 \u0111\u1ec3 s\u1eed d\u1ee5ng k",
+                    "is_featured": "0",
+                    "isParent": "0",
+                    "url": "\/cpu-intel-core-i3",
+                    "parentId": "617",
+                    "thumnail": ""
+                }
+            ],
+            "tag_list": [],
+            "addon": []
+        }';
+           wp_die();
+       }
+       die();
+    }
+   }

@@ -9,6 +9,11 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Font Awesome 5 Pro';
+	src: url(./webfonts/fa-regular-400.woff);
+  }
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
 	@font-face {
 		font-family: "woocommerce-product-builder";
