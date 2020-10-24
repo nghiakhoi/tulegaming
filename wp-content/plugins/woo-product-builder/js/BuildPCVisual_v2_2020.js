@@ -103,10 +103,11 @@ var BuildPCVisual = function (_objBuildPC) {
                 objBuildPC.removeItem(category_id, product_id, function (category_id, product_id) {
                     jQuery("#js-selected-item-" + category_id).html('');
                     //then save
+                    //show summary
+                displaySelectedConfigSummary();
                     saveConfig();
                 });
-                //show summary
-                displaySelectedConfigSummary();
+                
                 return true;
               
             }
@@ -184,6 +185,7 @@ var BuildPCVisual = function (_objBuildPC) {
 
         jQuery.post( ACTION_URL, {
             action     : "loadpost",
+            category_id : category_info.id,
             } , function (data) {
             $modal_container.html(data);
           	console.log(category_info);
@@ -207,6 +209,22 @@ var BuildPCVisual = function (_objBuildPC) {
         jQuery.get( filter_url, {} , function (data) {
             $modal_container.html(data);
         });
+    }
+
+    //load product selection filter
+    function searchProductFilter(filter_url,searchstring) {
+        
+        jQuery.post( filter_url, {
+
+            action     : "timkiem",
+            searchstring : searchstring
+
+        } , function (data) {
+            console.log(searchstring);
+            $modal_container.html(data);
+        });
+
+        
     }
 
     function deleteSelectedConfig() {
@@ -374,6 +392,7 @@ var BuildPCVisual = function (_objBuildPC) {
     return {
         showLayout: showLayout,
         showProductFilter : showProductFilter,
+        searchProductFilter : searchProductFilter,
         showSelectedConfig : showSelectedConfig,
         displayProductInCategory : displayProductInCategory,
         deleteSelectedConfig : deleteSelectedConfig,

@@ -257,30 +257,7 @@ class VI_WPRODUCTBUILDER_F_FrontEnd_Step {
 <a href="#" class="click_popup">Thông báo</a>
 <i class="fas fa-shopping-cart"></i></span></li>
           </ul>
-          <ul class="list-btn-action" id="js-buildpc-action">
-<?php 
-$query = new WP_Query( array(
-    'post_type'      => 'product',
-    'post_status'    => 'publish',
-    'posts_per_page' => -1,
-    'tax_query'      => array( array(
-        'taxonomy'   => 'product_cat',
-        'field'      => 'term_id',
-        'terms'      => '142',
-    ) )
-) );
-
-while ( $query->have_posts() ) : $query->the_post();
-    echo '<li style="color:red" class="list-cat"><a href="'. get_permalink() .'"><div class="product__preview"><img src="' . get_the_post_thumbnail_url() . '"></div><span>' . get_the_title() . '</span></a></li>';
-endwhile;
-
-wp_reset_postdata();
- 
-?>
-<li style="color:red" class="list-cat" >
-        <?php echo 'aa'; ?>
-    </li>
-</ul>
+         
 
 <div class="display-post-cat"></div>
 
@@ -351,33 +328,7 @@ wp_reset_postdata();
 	<div id="js-modal-popup">
 </div>
 
-<script>
-    jQuery(".icon-menu-filter-mobile").click(function(){
-        jQuery(".build-pc .popup-select .popup-main .popup-main_filter").toggle();
-    });
-
-    var SEARCH_URL = "https://nghiakhoi.ddns.net:8888/wp-admin/admin-ajax.php";
-
-    function loadAjaxContent(holder_id, url){
-        objBuildPCVisual.showProductFilter(url);
-    }
-
-    function searchKeyword(query) {
-        if(query.length < 2) return ;
-        objBuildPCVisual.showProductFilter(SEARCH_URL + '&q=' + encodeURIComponent(query));
-    }
-
-    jQuery("#buildpc-search-keyword").keypress(function(e) {
-        if(e.which == 13) {
-            e.preventDefault();
-            searchKeyword(this.value);
-        }
-    });
-
-    jQuery("#js-buildpc-search-btn").on("click", function(){
-        searchKeyword(jQuery("#buildpc-search-keyword").val());
-    });
-</script></div>
+</div>
 </div>
 
 <script>
@@ -745,8 +696,8 @@ wp_reset_postdata();
 		wp_enqueue_script( 'woo-product-builder2', VI_WPRODUCTBUILDER_F_JS . 'BuildPC_v2.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );
 		wp_enqueue_script( 'woo-product-builder1', VI_WPRODUCTBUILDER_F_JS . 'BuildPCVisual_v2_2020.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );
 		
-		wp_enqueue_script( 'woo-product-builder3', VI_WPRODUCTBUILDER_F_JS . 'hurastore.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );
-		wp_enqueue_script( 'woo-product-builder3', VI_WPRODUCTBUILDER_F_JS . 'hurasoft.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );
+		//wp_enqueue_script( 'woo-product-builder3', VI_WPRODUCTBUILDER_F_JS . 'hurastore.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );
+		//wp_enqueue_script( 'woo-product-builder3', VI_WPRODUCTBUILDER_F_JS . 'hurasoft.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );
 		// wp_enqueue_script( 'woo-product-builder3', VI_WPRODUCTBUILDER_F_JS . 'common.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );
 		// wp_enqueue_script( 'woo-product-builder4', VI_WPRODUCTBUILDER_F_JS . 'hurasoft.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );
 		// wp_enqueue_script( 'woo-product-builder5', VI_WPRODUCTBUILDER_F_JS . 'hurastore.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );

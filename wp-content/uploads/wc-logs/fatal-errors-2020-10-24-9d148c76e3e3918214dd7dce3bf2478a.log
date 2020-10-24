@@ -2,3 +2,309 @@
 
 2020-10-24T05:22:45+00:00 CRITICAL syntax error, unexpected '$_GET' (T_VARIABLE), expecting ';' or ',' in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 548
 
+2020-10-24T07:38:43+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 572
+
+2020-10-24T07:38:46+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 572
+
+2020-10-24T07:38:49+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 572
+
+2020-10-24T07:43:51+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 573
+
+2020-10-24T07:43:52+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 573
+
+2020-10-24T07:45:31+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 735
+
+2020-10-24T07:45:32+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 735
+
+2020-10-24T07:45:37+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 573
+
+2020-10-24T07:45:37+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 573
+
+2020-10-24T08:10:44+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_post_thumbnail_url() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:589
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): example_ajax_request('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_example...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 589
+
+2020-10-24T08:11:31+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_post_thumbnail_url() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:589
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): example_ajax_request('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_example...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 589
+
+2020-10-24T08:11:36+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_post_thumbnail_url() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:589
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): example_ajax_request('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_example...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 589
+
+2020-10-24T08:13:19+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_post_thumbnail_url() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:553
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): example_ajax_request('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_example...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 553
+
+2020-10-24T08:18:00+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_ID() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:553
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): example_ajax_request('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_example...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 553
+
+2020-10-24T08:18:13+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_ID() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:553
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): example_ajax_request('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_example...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 553
+
+2020-10-24T08:18:24+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_ID() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:553
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): example_ajax_request('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_example...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 553
+
+2020-10-24T08:20:26+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_ID() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:553
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): example_ajax_request('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_example...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 553
+
+2020-10-24T08:20:31+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_ID() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:553
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): example_ajax_request('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_example...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 553
+
+2020-10-24T08:21:50+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_ID() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:553
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): example_ajax_request('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_example...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 553
+
+2020-10-24T14:58:42+00:00 CRITICAL Uncaught Error: Call to a member function get_col() on null in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:792
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpostsearch_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 792
+
+2020-10-24T15:11:07+00:00 CRITICAL Uncaught Error: Call to a member function get_col() on null in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:783
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpostsearch_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 783
+
+2020-10-24T15:15:08+00:00 CRITICAL Uncaught Error: Call to a member function get_col() on null in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:783
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpostsearch_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 783
+
+2020-10-24T15:16:26+00:00 CRITICAL Uncaught Error: Call to a member function get_col() on null in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:783
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpostsearch_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 783
+
+2020-10-24T15:18:56+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on bool in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:583
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): example_ajax_request('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_example...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 583
+
+2020-10-24T15:28:42+00:00 CRITICAL Uncaught Error: Call to a member function get_col() on null in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:783
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): loadpostsearch_init('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_loadpos...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 783
+
+2020-10-24T15:48:43+00:00 CRITICAL Uncaught Error: Call to a member function get_col() on null in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:783
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): timkiem('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_timkiem')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 783
+
+2020-10-24T15:48:50+00:00 CRITICAL Uncaught Error: Call to a member function get_col() on null in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:783
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): timkiem('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_timkiem')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 783
+
+2020-10-24T15:53:25+00:00 CRITICAL Uncaught Error: Call to a member function get_col() on null in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:783
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): timkiem('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_timkiem')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 783
+
+2020-10-24T15:54:00+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:784
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): timkiem('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_timkiem')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 784
+
+2020-10-24T15:55:18+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:784
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): timkiem('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_timkiem')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 784
+
+2020-10-24T15:55:56+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:784
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): timkiem('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_timkiem')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 784
+
+2020-10-24T15:56:16+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:784
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): timkiem('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_timkiem')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 784
+
+2020-10-24T16:01:38+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:784
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): timkiem('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_timkiem')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 784
+
+2020-10-24T16:02:39+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:784
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): timkiem('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_timkiem')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 784
+
+2020-10-24T16:03:21+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:784
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): timkiem('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_timkiem')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 784
+
+2020-10-24T16:03:56+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:784
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): timkiem('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_timkiem')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 784
+
+2020-10-24T16:05:57+00:00 CRITICAL Uncaught Error: Call to undefined function mysql_error() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:784
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): timkiem('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_timkiem')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 784
+
+2020-10-24T16:08:05+00:00 CRITICAL Uncaught Error: Call to undefined function mysql_error() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:784
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): timkiem('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_timkiem')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 784
+
+2020-10-24T16:08:26+00:00 CRITICAL Uncaught Error: Call to undefined function mysql_error() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:784
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): timkiem('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_timkiem')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 784
+
+2020-10-24T16:09:32+00:00 CRITICAL Uncaught Error: Call to undefined function mysql_error() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:786
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): timkiem('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_timkiem')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 786
+
+2020-10-24T16:10:07+00:00 CRITICAL Uncaught Error: Call to undefined function mysql_error() in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:786
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): timkiem('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_timkiem')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 786
+

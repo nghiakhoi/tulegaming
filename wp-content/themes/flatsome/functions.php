@@ -15,6 +15,7 @@ add_action( 'wp_ajax_loadpost', 'loadpost_init' );
 add_action( 'wp_ajax_nopriv_loadpost', 'loadpost_init' );
 function loadpost_init() {
  
+    $cat_id = isset($_POST['category_id']) ? (int)$_POST['category_id'] : 0;
     $query = new WP_Query( array(
         'post_type'      => 'product',
         'post_status'    => 'publish',
@@ -22,14 +23,42 @@ function loadpost_init() {
         'tax_query'      => array( array(
             'taxonomy'   => 'product_cat',
             'field'      => 'term_id',
-            'terms'      => '142',
+            'terms'      => $cat_id,
         ) )
     ) );
     
     
-    
 
     ?>
+
+<script>
+    jQuery(".icon-menu-filter-mobile").click(function(){
+        jQuery(".build-pc .popup-select .popup-main .popup-main_filter").toggle();
+    });
+
+    var SEARCH_URL = "https://nghiakhoi.ddns.net:8888/wp-admin/admin-ajax.php";
+
+    function loadAjaxContent(holder_id, url){
+        objBuildPCVisual.showProductFilter(url);
+    }
+
+    function searchKeyword(query) {
+        if(query.length < 2) return ;
+        objBuildPCVisual.searchProductFilter(SEARCH_URL, encodeURIComponent(query));
+    }
+
+    jQuery("#buildpc-search-keyword").keypress(function(e) {
+        if(e.which == 13) {
+            e.preventDefault();
+            searchKeyword(this.value);
+        }
+    });
+
+    jQuery("#js-buildpc-search-btn").on("click", function(){
+        searchKeyword(jQuery("#buildpc-search-keyword").val());
+    });
+</script>
+
 <div id="js-modal-popup"><div class="mask-popup active">
     <div class="close-pop-biuldpc" onclick="closePopup()" style="width: 100%;float: left;height: 100%;position: fixed;z-index: 1;"></div>
     <div class="popup-select" style="z-index: 99;">
@@ -542,8 +571,17 @@ add_action( 'wp_ajax_nopriv_example_ajax_request', 'example_ajax_request' );
 function example_ajax_request() {
     if ( isset($_GET) ) {
        if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) { 
+        
+        $cat_id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
+        $product_info = wc_get_product( $cat_id );
+    
+
+
            $fruit = $_GET['id'];
            //echo $fruit;
+           //echo $product_image = wp_get_attachment_image_src( get_post_thumbnail_id( $product_info->get_the_ID() ), 'single-post-thumbnail' );
+           $image_id  = $product_info->get_image_id();
+            $image_url = wp_get_attachment_image_url( $image_id, 'full' );
            echo '{
             "id": "'.$_GET['id'].'",
             "productId": "'.$_GET['id'].'",
@@ -575,18 +613,18 @@ function example_ajax_request() {
                     "path_url": "<a href=\"\/linh-kien-may-tinh\">Linh Ki\u1ec7n M\u00e1y T\u00ednh<\/a>  &gt;&gt; <a href=\"\/cpu-bo-vi-xu-ly\">CPU - B\u1ed9 vi x\u1eed l\u00fd<\/a>  &gt;&gt; <a href=\"\/cpu-intel\">CPU Intel<\/a>  &gt;&gt; <a href=\"\/cpu-intel-core-i3\">CPU Intel Core i3<\/a> "
                 }
             ],
-            "productModel": "CPUI407",
-            "productSKU": "CPUI407",
+            "productModel": "'.$product_info->get_sku().'",
+            "productSKU": "'.$product_info->get_sku().'",
             "productUrl": "\/cpu-intel-core-i3-10100f",
-            "productName": "'.$_GET['id'].'CPU Intel Core i3-10100F (3.6GHz turbo up to 4.3Ghz, 4 nh\u00e2n 8 lu\u1ed3ng, 6MB Cache, 65W) - Socket Intel LGA 1200",
+            "productName": "'.$product_info->get_name().'",
             "productImage": {
                 "thum": "https:\/\/hanoicomputercdn.com\/media\/product\/50_55894_cpu_intel_core_i3_10100f.jpg",
-                "small": "https:\/\/hanoicomputercdn.com\/media\/product\/75_55894_cpu_intel_core_i3_10100f.jpg",
+                "small": "'.$image_url.'",
                 "medium": "https:\/\/hanoicomputercdn.com\/media\/product\/120_55894_cpu_intel_core_i3_10100f.jpg",
                 "large": "https:\/\/hanoicomputercdn.com\/media\/product\/250_55894_cpu_intel_core_i3_10100f.jpg",
                 "original": "https:\/\/hanoicomputercdn.com\/media\/product\/55894_cpu_intel_core_i3_10100f.jpg"
             },
-            "price": "2399000",
+            "price": "'.$product_info->get_price().'",
             "currency": "vnd",
             "promotion_price": "0",
             "priceUnit": "chi\u1ebfc",
@@ -650,7 +688,7 @@ function example_ajax_request() {
                     "folder": "standard",
                     "size": {
                         "thum": "https:\/\/hanoicomputercdn.com\/media\/product\/50_55894_cpu_intel_core_i3_10100f.jpg",
-                        "small": "https:\/\/hanoicomputercdn.com\/media\/product\/75_55894_cpu_intel_core_i3_10100f.jpg",
+                        "small": "'.$image_url.'",
                         "medium": "https:\/\/hanoicomputercdn.com\/media\/product\/120_55894_cpu_intel_core_i3_10100f.jpg",
                         "large": "https:\/\/hanoicomputercdn.com\/media\/product\/250_55894_cpu_intel_core_i3_10100f.jpg",
                         "original": "https:\/\/hanoicomputercdn.com\/media\/product\/55894_cpu_intel_core_i3_10100f.jpg"
@@ -733,3 +771,26 @@ function example_ajax_request() {
        die();
     }
    }
+
+  
+
+  // ĐÂY LÀ CHỖ CHO AJAX SEARCH
+  add_action( 'wp_ajax_timkiem', 'timkiem' );
+add_action( 'wp_ajax_nopriv_timkiem', 'timkiem' );
+function timkiem() {
+    $search_string = isset($_POST['searchstring']) ? $_POST['searchstring'] : "";
+
+    global $wpdb; // Biến toàn cục lớp $wpdb được sử dụng trong khi tương tác với databse wordpress
+     $table = $wpdb->prefix . 'posts'; // Khai báo bảng cần lấy
+     $sql = "SELECT * FROM {$table} WHERE `post_type` = 'product' and (`post_title` LIKE '%".$search_string."%' OR `post_title` LIKE '".$search_string."%')"; // cậu sql query 
+     $data = $wpdb->get_results( $wpdb->prepare($sql, $limit, $offset), ARRAY_A); // thực thi câu query, trả về dữ liệu trong biến $data
+
+       print_r( $data); 
+      
+    ?>
+aaa
+    <?php
+   
+die();//bắt buộc phải có khi kết thúc
+
+}
