@@ -742,8 +742,11 @@ wp_reset_postdata();
 		}
 		/*Add script*/
 		wp_enqueue_script( 'woo-product-builder', VI_WPRODUCTBUILDER_F_JS . 'woo-product-builder.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );
-		wp_enqueue_script( 'woo-product-builder1', VI_WPRODUCTBUILDER_F_JS . 'BuildPCVisual_v2_2020.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );
 		wp_enqueue_script( 'woo-product-builder2', VI_WPRODUCTBUILDER_F_JS . 'BuildPC_v2.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );
+		wp_enqueue_script( 'woo-product-builder1', VI_WPRODUCTBUILDER_F_JS . 'BuildPCVisual_v2_2020.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );
+		
+		wp_enqueue_script( 'woo-product-builder3', VI_WPRODUCTBUILDER_F_JS . 'hurastore.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );
+		wp_enqueue_script( 'woo-product-builder3', VI_WPRODUCTBUILDER_F_JS . 'hurasoft.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );
 		// wp_enqueue_script( 'woo-product-builder3', VI_WPRODUCTBUILDER_F_JS . 'common.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );
 		// wp_enqueue_script( 'woo-product-builder4', VI_WPRODUCTBUILDER_F_JS . 'hurasoft.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );
 		// wp_enqueue_script( 'woo-product-builder5', VI_WPRODUCTBUILDER_F_JS . 'hurastore.js', array( 'jquery' ), VI_WPRODUCTBUILDER_F_VERSION );

@@ -268,6 +268,7 @@ var BuildPCVisual = function (_objBuildPC) {
             sku : product_info.sku,
             warranty : (product_info.warranty) ? product_info.warranty : ""
         }, product_tpl ));
+        displaySelectedConfigSummary();
     }
 
 

@@ -1796,3 +1796,7 @@ ul {
     font-weight: 700;
     text-align: right
 }
+
+button, input, select, textarea{
+  font: menu !important;
+}

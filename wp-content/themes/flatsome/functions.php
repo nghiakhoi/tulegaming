@@ -470,7 +470,7 @@ function loadpost_init() {
                         </div>
 
                         
-                        <span class="btn-buy js-select-product" data-id="55660"></span>
+                        <span class="btn-buy js-select-product" data-id="<?php echo get_the_ID(); ?>"></span>
                         
                     </div>
                     <?php
@@ -545,8 +545,8 @@ function example_ajax_request() {
            $fruit = $_GET['id'];
            //echo $fruit;
            echo '{
-            "id": "55894",
-            "productId": "55894",
+            "id": "'.$_GET['id'].'",
+            "productId": "'.$_GET['id'].'",
             "isOn": "1",
             "productPath": [
                 {
@@ -578,7 +578,7 @@ function example_ajax_request() {
             "productModel": "CPUI407",
             "productSKU": "CPUI407",
             "productUrl": "\/cpu-intel-core-i3-10100f",
-            "productName": "CPU Intel Core i3-10100F (3.6GHz turbo up to 4.3Ghz, 4 nh\u00e2n 8 lu\u1ed3ng, 6MB Cache, 65W) - Socket Intel LGA 1200",
+            "productName": "'.$_GET['id'].'CPU Intel Core i3-10100F (3.6GHz turbo up to 4.3Ghz, 4 nh\u00e2n 8 lu\u1ed3ng, 6MB Cache, 65W) - Socket Intel LGA 1200",
             "productImage": {
                 "thum": "https:\/\/hanoicomputercdn.com\/media\/product\/50_55894_cpu_intel_core_i3_10100f.jpg",
                 "small": "https:\/\/hanoicomputercdn.com\/media\/product\/75_55894_cpu_intel_core_i3_10100f.jpg",

@@ -1,0 +1,4 @@
+2020-10-24T05:22:44+00:00 CRITICAL syntax error, unexpected '$_GET' (T_VARIABLE), expecting ';' or ',' in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 548
+
+2020-10-24T05:22:45+00:00 CRITICAL syntax error, unexpected '$_GET' (T_VARIABLE), expecting ';' or ',' in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 548
+
