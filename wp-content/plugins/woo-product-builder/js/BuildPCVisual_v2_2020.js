@@ -212,12 +212,13 @@ var BuildPCVisual = function (_objBuildPC) {
     }
 
     //load product selection filter
-    function searchProductFilter(filter_url,searchstring) {
+    function searchProductFilter(filter_url,searchstring,category_id) {
         
         jQuery.post( filter_url, {
 
             action     : "timkiem",
-            searchstring : searchstring
+            searchstring : searchstring,
+            category_id : category_id
 
         } , function (data) {
             console.log(searchstring);

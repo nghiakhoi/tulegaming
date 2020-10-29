@@ -1,0 +1,9 @@
+2020-10-29T03:01:10+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on bool in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php:583
+Stack trace:
+#0 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(287): example_ajax_request('')
+#1 /volume2/web/tulegaming/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /volume2/web/tulegaming/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /volume2/web/tulegaming/wp-admin/admin-ajax.php(175): do_action('wp_ajax_example...')
+#4 {main}
+  thrown in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 583
+

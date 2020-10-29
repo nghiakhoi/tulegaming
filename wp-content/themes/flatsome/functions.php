@@ -42,15 +42,16 @@ function loadpost_init() {
         objBuildPCVisual.showProductFilter(url);
     }
 
-    function searchKeyword(query) {
+    function searchKeyword(query,category_id) {
         if(query.length < 2) return ;
-        objBuildPCVisual.searchProductFilter(SEARCH_URL, encodeURIComponent(query));
+        objBuildPCVisual.searchProductFilter(SEARCH_URL, encodeURIComponent(query),category_id);
     }
 
     jQuery("#buildpc-search-keyword").keypress(function(e) {
+        var category_id = jQuery("#buildpc-search-keyword").data("category-id");
         if(e.which == 13) {
             e.preventDefault();
-            searchKeyword(this.value);
+            searchKeyword(this.value,category_id);
         }
     });
 
@@ -65,7 +66,7 @@ function loadpost_init() {
         <div class="header">
             <h4>Chọn linh kiện</h4>
             <form action="">
-                <input type="text" value="" id="buildpc-search-keyword" class="input-search" placeholder="Bạn cần tìm linh kiện gì?">
+                <input type="text" value="" data-category-id="<?php echo $cat_id;?>" id="buildpc-search-keyword" class="input-search" placeholder="Bạn cần tìm linh kiện gì?">
                 <span class="btn-search"><i class="far fa-search" id="js-buildpc-search-btn"></i></span>
                 <div class="icon-menu-filter-mobile"><i class="fal fa-filter"></i> Lọc</div>
             </form>
@@ -779,10 +780,14 @@ function example_ajax_request() {
 add_action( 'wp_ajax_nopriv_timkiem', 'timkiem' );
 function timkiem() {
     $search_string = isset($_POST['searchstring']) ? $_POST['searchstring'] : "";
-
+    $category_id = isset($_POST['category_id']) ? $_POST['category_id'] : "";
     global $wpdb; // Biến toàn cục lớp $wpdb được sử dụng trong khi tương tác với databse wordpress
      $table = $wpdb->prefix . 'posts'; // Khai báo bảng cần lấy
-     $sql = "SELECT * FROM {$table} WHERE `post_type` = 'product' and (`post_title` LIKE '%".$search_string."%' OR `post_title` LIKE '".$search_string."%')"; // cậu sql query 
+     $sql = "SELECT * FROM {$table} 
+        INNER JOIN $wpdb->term_relationships ON wp_term_relationships.object_id = wp_posts.ID
+        
+        WHERE `post_type` = 'product' and wp_term_relationships.term_taxonomy_id = '".$category_id."' and (`post_title` LIKE '%".$search_string."%' OR `post_title` LIKE '".$search_string."%')
+     ";
      $data = $wpdb->get_results( $wpdb->prepare($sql, $limit, $offset), ARRAY_A); // thực thi câu query, trả về dữ liệu trong biến $data
 
        print_r( $data); 
