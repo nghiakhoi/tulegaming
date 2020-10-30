@@ -361,7 +361,8 @@ class VI_WPRODUCTBUILDER_F_FrontEnd_Step {
     //document ready
     jQuery(function () {
         showBuildId(1);
-    	//runSlider();
+		//runSlider();
+		
     });
   
     function runSlider() {

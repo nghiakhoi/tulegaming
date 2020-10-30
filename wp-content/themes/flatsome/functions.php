@@ -617,14 +617,14 @@ function example_ajax_request() {
             ],
             "productModel": "'.$product_info->get_sku().'",
             "productSKU": "'.$product_info->get_sku().'",
-            "productUrl": "\/cpu-intel-core-i3-10100f",
+            "productUrl": "'.$product_info->get_permalink().'",
             "productName": "'.$product_info->get_name().'",
             "productImage": {
-                "thum": "https:\/\/hanoicomputercdn.com\/media\/product\/50_55894_cpu_intel_core_i3_10100f.jpg",
+                "thum": "'.$image_url.'",
                 "small": "'.$image_url.'",
-                "medium": "https:\/\/hanoicomputercdn.com\/media\/product\/120_55894_cpu_intel_core_i3_10100f.jpg",
-                "large": "https:\/\/hanoicomputercdn.com\/media\/product\/250_55894_cpu_intel_core_i3_10100f.jpg",
-                "original": "https:\/\/hanoicomputercdn.com\/media\/product\/55894_cpu_intel_core_i3_10100f.jpg"
+                "medium": "'.$image_url.'",
+                "large": "'.$image_url.'",
+                "original": "'.$image_url.'"
             },
             "price": "'.$product_info->get_price().'",
             "currency": "vnd",
@@ -656,13 +656,13 @@ function example_ajax_request() {
                 {
                     "folder": "standard",
                     "size": {
-                        "thum": "https:\/\/hanoicomputercdn.com\/media\/product\/50_55894_cpu_intel_core_i3_10100f_11.jpg",
-                        "small": "https:\/\/hanoicomputercdn.com\/media\/product\/75_55894_cpu_intel_core_i3_10100f_11.jpg",
-                        "medium": "https:\/\/hanoicomputercdn.com\/media\/product\/120_55894_cpu_intel_core_i3_10100f_11.jpg",
-                        "large": "https:\/\/hanoicomputercdn.com\/media\/product\/250_55894_cpu_intel_core_i3_10100f_11.jpg",
-                        "original": "https:\/\/hanoicomputercdn.com\/media\/product\/55894_cpu_intel_core_i3_10100f_11.jpg"
+                        "thum": "'.$image_url.'",
+                        "small": "'.$image_url.'",
+                        "medium": "'.$image_url.'",
+                        "large": "'.$image_url.'",
+                        "original": "'.$image_url.'"
                     },
-                    "alt": "CPU Intel Core i3-10100F"
+                    "alt": "'.$product_info->get_name().'"
                 },
                 {
                     "folder": "standard",
@@ -673,7 +673,7 @@ function example_ajax_request() {
                         "large": "https:\/\/hanoicomputercdn.com\/media\/product\/250_55894_cpu_intel_core_i3_10100f_22.jpg",
                         "original": "https:\/\/hanoicomputercdn.com\/media\/product\/55894_cpu_intel_core_i3_10100f_22.jpg"
                     },
-                    "alt": "CPU Intel Core i3-10100F"
+                    "alt": "'.$product_info->get_name().'"
                 },
                 {
                     "folder": "standard",
@@ -684,7 +684,7 @@ function example_ajax_request() {
                         "large": "https:\/\/hanoicomputercdn.com\/media\/product\/250_55894_cpu_intel_core_i3_10100f_33.jpg",
                         "original": "https:\/\/hanoicomputercdn.com\/media\/product\/55894_cpu_intel_core_i3_10100f_33.jpg"
                     },
-                    "alt": "CPU Intel Core i3-10100F"
+                    "alt": "'.$product_info->get_name().'"
                 },
                 {
                     "folder": "standard",
@@ -695,7 +695,7 @@ function example_ajax_request() {
                         "large": "https:\/\/hanoicomputercdn.com\/media\/product\/250_55894_cpu_intel_core_i3_10100f.jpg",
                         "original": "https:\/\/hanoicomputercdn.com\/media\/product\/55894_cpu_intel_core_i3_10100f.jpg"
                     },
-                    "alt": "CPU Intel Core i3-10100F"
+                    "alt": "'.$product_info->get_name().'"
                 }
             ],
             "productImageCount": "4",
