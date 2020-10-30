@@ -361,7 +361,7 @@ class VI_WPRODUCTBUILDER_F_FrontEnd_Step {
     //document ready
     jQuery(function () {
         showBuildId(1);
-    	runSlider();
+    	//runSlider();
     });
   
     function runSlider() {
@@ -430,18 +430,18 @@ class VI_WPRODUCTBUILDER_F_FrontEnd_Step {
   
   
         // get save-config
-        Hura.User.getInfo(SAVE_BUILD_ID, function (pc_config) {
-            //set config
-            objBuildPC.setConfig(pc_config);
+        // Hura.User.getInfo(SAVE_BUILD_ID, function (pc_config) {
+        //     //set config
+        //     objBuildPC.setConfig(pc_config);
 
-            for(let category_id in pc_config) {
-                if(pc_config.hasOwnProperty(category_id)) {
-                    objBuildPCVisual.displayProductInCategory(category_id, pc_config[category_id].items[0]);
-                }
-            }
-            //show summary 
-            objBuildPCVisual.displaySummary();
-        } );
+        //     for(let category_id in pc_config) {
+        //         if(pc_config.hasOwnProperty(category_id)) {
+        //             objBuildPCVisual.displayProductInCategory(category_id, pc_config[category_id].items[0]);
+        //         }
+        //     }
+        //     //show summary 
+        //     objBuildPCVisual.displaySummary();
+        // } );
 
         _listener();
         
@@ -573,19 +573,19 @@ class VI_WPRODUCTBUILDER_F_FrontEnd_Step {
         });
 
         //get config saved
-        Hura.User.getInfo(SAVE_BUILD_ID, function (pc_config) {
-            for(var category_id in pc_config) {
-                if(pc_config.hasOwnProperty(category_id)) {
-                    objBuildPCVisual.displayProductInCategory(category_id, pc_config[category_id].items[0]);
-                    var pro = JSON.stringify(pc_config[category_id].items[0], true, 4);
-                    pro = JSON.parse(pro);
-                    //console.log("config item = " + JSON.stringify(pc_config[category_id].items[0], true, 4));
-                    //addToShoppingCart('pro',pro.id,pro.quantity,pro.price);
-                    listenBuyPro(pro.id,0,pro.quantity,'','/cart');
-                }
-            }
+        // Hura.User.getInfo(SAVE_BUILD_ID, function (pc_config) {
+        //     for(var category_id in pc_config) {
+        //         if(pc_config.hasOwnProperty(category_id)) {
+        //             objBuildPCVisual.displayProductInCategory(category_id, pc_config[category_id].items[0]);
+        //             var pro = JSON.stringify(pc_config[category_id].items[0], true, 4);
+        //             pro = JSON.parse(pro);
+        //             //console.log("config item = " + JSON.stringify(pc_config[category_id].items[0], true, 4));
+        //             //addToShoppingCart('pro',pro.id,pro.quantity,pro.price);
+        //             listenBuyPro(pro.id,0,pro.quantity,'','/cart');
+        //         }
+        //     }
 
-        });
+        // });
     }
 
     function formatCurrency(a) {

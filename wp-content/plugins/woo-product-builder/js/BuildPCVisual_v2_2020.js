@@ -105,7 +105,7 @@ var BuildPCVisual = function (_objBuildPC) {
                     //then save
                     //show summary
                 displaySelectedConfigSummary();
-                    saveConfig();
+                    //saveConfig();
                 });
                 
                 return true;
@@ -148,7 +148,7 @@ var BuildPCVisual = function (_objBuildPC) {
                 $div_container.find(".sum_price").html( writeStringToPrice(parseInt(new_quantity) * parseInt(product_price)));
 
                 //then save
-                saveConfig();
+                //saveConfig();
 
                 return true;
             }
@@ -331,7 +331,7 @@ var BuildPCVisual = function (_objBuildPC) {
                 //and close modal and remove content
                 $modal_container.html('');
                 //then save
-                saveConfig();
+                //saveConfig();
             };
 
             //console.log(data);
