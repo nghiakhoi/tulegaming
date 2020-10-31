@@ -11,6 +11,18 @@ require get_template_directory() . '/inc/init.php';
  * Note: It's not recommended to add any custom code here. Please use a child theme so that your customizations aren't lost during updates.
  * Learn more here: http://codex.wordpress.org/Child_Themes
  */
+
+function my_deregister_heartbeat() {
+    global $pagenow;
+
+    if ( 'post.php' != $pagenow && 'post-new.php' != $pagenow ) {
+         wp_deregister_script('heartbeat');
+         wp_register_script('heartbeat', false);
+     }
+}
+add_action( 'admin_enqueue_scripts', 'my_deregister_heartbeat' );
+
+
 add_action( 'wp_ajax_loadpost', 'loadpost_init' );
 add_action( 'wp_ajax_nopriv_loadpost', 'loadpost_init' );
 function loadpost_init() {

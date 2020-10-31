@@ -1,0 +1,6 @@
+2020-10-31T15:32:55+00:00 CRITICAL require(): Failed opening required '../../../../wp-load.php' (include_path='.:/usr/share/pear') in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 11
+
+2020-10-31T15:33:10+00:00 CRITICAL require(): Failed opening required '../../../../wp-load.php' (include_path='.:/usr/share/pear') in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 19
+
+2020-10-31T15:33:10+00:00 CRITICAL require(): Failed opening required '../../../../wp-load.php' (include_path='.:/usr/share/pear') in /volume2/web/tulegaming/wp-content/themes/flatsome/functions.php on line 19
+
