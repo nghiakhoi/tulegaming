@@ -228,6 +228,24 @@ var BuildPCVisual = function (_objBuildPC) {
         
     }
 
+     //load product selection filter
+     function searchProductFilterByAttribute(filter_url,searchstring,category_id) {
+        
+        jQuery.post( filter_url, {
+
+            action     : "timkiembyattribute",
+            searchstring : searchstring,
+            category_id : category_id,
+            
+
+        } , function (data) {
+            console.log(searchstring);
+            $modal_container.html(data);
+        });
+
+        
+    }
+
     function deleteSelectedConfig() {
         return objBuildPC.emptyConfig();
     }
@@ -394,6 +412,7 @@ var BuildPCVisual = function (_objBuildPC) {
         showLayout: showLayout,
         showProductFilter : showProductFilter,
         searchProductFilter : searchProductFilter,
+        searchProductFilterByAttribute : searchProductFilterByAttribute,
         showSelectedConfig : showSelectedConfig,
         displayProductInCategory : displayProductInCategory,
         deleteSelectedConfig : deleteSelectedConfig,
