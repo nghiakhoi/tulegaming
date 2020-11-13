@@ -7,7 +7,8 @@ var BuildPCVisual = function (_objBuildPC) {
 
     var objBuildPC = _objBuildPC;
     var BUILD_PRODUCT_TYPE = objBuildPC.getBuildId();
-    var ACTION_URL = "https://nghiakhoi.ddns.net:8888/wp-admin/admin-ajax.php";
+    var ACTION_URL = "/wp-admin/admin-ajax.php";
+    //var ACTION_URL = "https://nghiakhoi.ddns.net:8888/wp-admin/admin-ajax.php";
     var $layout_container = jQuery("#js-buildpc-layout");
     var $modal_container = jQuery("#js-modal-popup");
     var row_tpl = `<div class="item-drive">

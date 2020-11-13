@@ -26,7 +26,7 @@ define( 'DB_NAME', 'tulegaming' );
 define( 'DB_USER', 'root' );
 
 /** Mật khẩu của database */
-define( 'DB_PASSWORD', '4264720' );
+define( 'DB_PASSWORD', 'root' );
 
 /** Hostname của database */
 define( 'DB_HOST', 'localhost' );

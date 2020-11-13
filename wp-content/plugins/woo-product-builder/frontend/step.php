@@ -352,7 +352,9 @@ class VI_WPRODUCTBUILDER_F_FrontEnd_Step {
     
    
 ];
-    var SEARCH_URL = "https://nghiakhoi.ddns.net:8888/wp-admin/admin-ajax.php";
+	var SEARCH_URL = "<?php echo get_site_url(); ?>"+"/wp-admin/admin-ajax.php";
+	//var SEARCH_URL = "https://nghiakhoi.ddns.net:8888/wp-admin/admin-ajax.php";
+
   
     let SAVE_BUILD_ID = '';
     let objBuildPC;
